@@ -8,7 +8,7 @@ System.out.println(s);
     }
     
     public static void main(String[] args) {
-
+printLine("Hello!!");
 printLine("Hello World!");
     }
 }
