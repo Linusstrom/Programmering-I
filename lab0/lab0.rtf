@@ -1,0 +1,152 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf230
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12600\viewh10200\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs28 \cf0 Del 0\
+\
+0.\
+Det f\'f6rsta jag gjorde var att ladda ner filen lab0.zip och extraherade filerna.\
+\
+Sen s\'e5 tog jag och kompilerade filen HelloWorld.java med koden: javac HelloWorld.java\
+\
+Sen s\'e5 k\'f6rde jag programmet med koden: java HelloWorld\
+\
+Linus-Str-ms-MacBook:lab0 test$ java HelloWorld\
+Hello World!\
+\
+1.\
+Jag \'f6ppnade filen HelloWorld.java i textredigeraren och bytte ut Hello World! mot Hej Linus\
+\
+Linus-Str-ms-MacBook:lab0 test$ java HelloWorld\
+Hej Linus\
+\
+2.\
+Jag kompilerade filen med: javac Dialog.java och sedan k\'f6rde jag programmet med: java Dialog\
+Programmet skrev: Hej!\
+Vad heter du? jag fick svara: Linus. Sedan svarade programmet mig med: Du heter Linus. \
+\
+Linus-Str-ms-MacBook:lab0 test$ java Dialog\
+Hej!\
+Vad heter du? Linus\
+Du heter Linus.\
+Linus-Str-ms-MacBook\
+\
+3.\
+String input = "";\
+	\ul int numb;\ulnone \
+	System.out.println("Hej!");\
+	System.out.print("Vad heter du? ");\
+	\
+	input = myScanner.next();\
+	\
+	\ul System.out.print("Hur gammal \'e4r du? ");\
+	numb = myScanner.nextInt();\ulnone \
+	System.out.println("Du heter " + input +  "\ul  och \'e4r " + numb + " \'e5r.\ulnone ");\
+\
+Jag har skrivit in det understrukna. D\'e4r int numb l\'e4gger till en variabel som hanterar tal\
+Sen la jag till en ny rad med system.out.print(\'94 Hur gammal \'e4r du? \'94) som st\'e4ller en ny fr\'e5ga?\
+N\'e4sta rad meddelar Scannern s\'e5 att den kan ta in heltal och svaret ska bli i heltal.\
+Och tillslut s\'e5 s\'e4ger datorn allt det du har skrivit in och det datorn har fr\'e5gat.\
+\
+Linus-Str-ms-MacBook:lab0 test$ java Dialog\
+Hej!\
+Vad heter du? linus\
+Hur gammal \'e4r du? 23\
+Du heter linus och \'e4r 23 \'e5r.\
+\
+Del 1\
+\
+4. \
+Jag kompilerade filen Calculator.java med: javac Calculator.java och sedan k\'f6rde filen med: java Calculator och fick fr\'e5gan att skriva in ett tal jag, jag valde talet 1 och sen bad den mig s\'e4ga ett tal till och jag valde 2 sen gav den mig produkten av dom talen. vilket blev 2. \
+\
+Linus-Str-ms-MacBook:lab0 test$ java Calculator\
+Skriv in ett tal: 1\
+Skriv in ett till tal: 2\
+Produkten av talen ?r: 2\
+\
+5. Jag b\'f6rjade med att l\'e4gga till: int number0, number1,\ul  number2, number3, number4\ulnone \
+Sen kopierade jag in System.out.print("Skriv in ett tal: ");\
+	// S\'e5 h\'e4r l\'e4ser man in ett heltal\
+	number0 = myScanner.nextInt();\
+och bytte ut number1 till number2 osv\
+Sen i slutet s\'e5 la jag till \
+System.out.println(\'94Summan av talen \'e4r: " + (number0 * number1\ul  / number2 - number3 + number4\
+\ulnone f\'f6r att visa vad som skulle g\'f6ras och f\'f6r att alla operatorer skulle vara med.\
+\
+Linus-Str-ms-MacBook:lab0 test$ java Calculator\
+Skriv in ett tal: 2\
+Skriv in ett till tal: 2\
+Skriv in ett till tal: 2\
+Skriv in ett till tal: 2\
+Skriv in ett till tal: 2\
+Produkten av talen ?r: 2\
+\
+6.\
+Jag b\'f6rjade med att l\'e4gga till en scanner och sedan att g\'f6ra variablerna 0 och 1.\
+\
+Sedan s\'e5 printade jag ut: Rektangelns bas i variabeln 0 och rektangelns h\'f6jd i variabeln 1.\
+\
+Sen printade jag ut ("Rektangelns omkrets \'e4r: " + (number0 + number0 	+ number1 + number1 ));\
+och ("Rektangelns area \'e4r: " + (number0 *  number1 ));\
+\
+Resultatet blev \
+Linus-Str-ms-MacBook:lab0 test$ javac Calculatorrektangel.java\
+Linus-Str-ms-MacBook:lab0 test$ java Calculatorrektangel\
+Skriv in Rektangelns bas: 10\
+Skriv in Rektangelns h\'f6jd: 15\
+Rektangelns omkrets \'e4r: 50\
+Rektangelns area \'e4r: 150\
+\
+7.\
+Jag b\'f6rjade med att l\'e4gga till en scanner och sedan att g\'f6ra string 0 och 1.\
+Sen s\'e5 printade jag ut "Skriv in ett ord: " i string0 och "Skriv in ett till ord: " i string1\
+och till sist s\'e5 printade jag ut ("L\'e4ngden p\'e5 1a ordet \'e4r: " + string0.length())\
+("L\'e4ngden p\'e5 2a ordet \'e4r: " + string1.length())\
+("Sammanlagda l\'e4ngden p\'e5 orden \'e4r: " +((string0.length()) + string1.length()))\
+\
+Resultatet blev:\
+Linus-Str-ms-MacBook:lab0 test$ javac orden.java\
+Linus-Str-ms-MacBook:lab0 test$ java orden\
+Skriv in ett ord: kattsand\
+Skriv in ett till ord: hundkoja\
+L\'e4ngden p\'e5 1a ordet \'e4r: 8\
+L\'e4ngden p\'e5 2a ordet \'e4r: 8\
+Sammanlagda l\'e4ngden p\'e5 orden \'e4r: 16\
+\
+i mitt andra f\'f6rs\'f6k s\'e5 la jag ut alla svaren p\'e5 en rad med hj\'e4p av att printa ut System.out.println("L\'e4ngden p\'e5 1a ordet \'e4r: " + string0.length() + " L\'e4ngden p\'e5 2a ordet \'e4r: " + string1.length() + " Sammanlagda l\'e4ngden p\'e5 orden \'e4r: " +((string0.length()) + string1.length()))\
+\
+Linus-Str-ms-MacBook:lab0 test$ javac orden.java\
+Linus-Str-ms-MacBook:lab0 test$ java orden\
+Skriv in ett ord: t\'e5lmodig\
+Skriv in ett till ord: k\'e4rleksfull\
+L\'e4ngden p\'e5 1a ordet \'e4r: 9 L\'e4ngden p\'e5 2a ordet \'e4r: 12 Sammanlagda l\'e4ngden p\'e5 orden \'e4r: 21\
+\
+Del 2\
+\
+8.\
+Jag b\'f6rjade med att l\'e4gga till en skanner och sedan att l\'e4gga till en variabel short(tal0)\
+Sen s\'e5 printade ja ut System.out.print("Skriv in ett tal \'f6ver 60000: ");\
+och designerade den till skannern: 	tal0 = myScanner.nextShort();\
+Och till sist s\'e5 printade jag ut: 	System.out.println(" Du skrev: " + tal0);\
+\
+och jag fick resultatet: \
+Linus-Str-ms-MacBook:lab0 test$ javac heltal.java\
+Linus-Str-ms-MacBook:lab0 test$ java heltal\
+Skriv in ett tal \'f6ver 60000: 70000\
+Exception in thread "main" java.util.InputMismatchException: Value out of range. Value:"70000" Radix:10\
+	at java.util.Scanner.nextShort(Scanner.java:1967)\
+	at java.util.Scanner.nextShort(Scanner.java:1920)\
+	at heltal.main(heltal.java:13)\
+\
+Som sa att v\'e4rdet va f\'f6r h\'f6gt.\
+\
+9.\
+Jag b\'f6rjade precis som vanligt med att skapa skanner och l\'e4gga till tv\'e5 stycken variabler d1, d2 och  la till ett v\'e4rde 0.0 och 0.1 p\'e5 dom. sen skulle jag f\'e5 v\'e4rdet att bytas i ena s\'e5 att jag fortfarande kunde lyckas addera upp till 1.0 men det va h\'e4r kruxet kom, jag fick variabelns v\'e4rde att \'e4ndras fr\'e5n 0.0 till 0.1 men jag lyckades inte komma n\'e5gon vart l\'e4ngre. \
+System.out.println("0.0 + 0.1 \'e4r: " + (d1 + d2)); d1 = (d1 + d2);\
+	//System.out.println(d1);\
+	//d1 = myScanner.nextDouble(); \
+Jag undrade vad jag hade gjort f\'f6r fel och satt med detta i ett antal timmar. Sen fick jag h\'f6ra den barnsligt l\'f6jliga l\'f6sningen, att ta bort skannern. s\'e5 n\'e4r jag hade gjort det s\'e5 fungerade det.\
+Men nu av n\'e5gon anledning s\'e5 blir det n\'e5gra tal som f\'e5r fel decimaltal. 0.3 blir 0.3000000004 och 0.8 0.9 och 1.0 st\'e4mmer inte heller, d\'e4r blir talen 0.79999999999 och 0.89999999999 och 0.999999999.\
+}
